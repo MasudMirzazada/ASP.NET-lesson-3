@@ -1,0 +1,10 @@
+﻿@using HOMETASKORM.Models;
+@using HOMETASKORM.ViewModels;
+@model HomeVM
+
+<ul>
+    @foreach (Product product in Model.Products)
+    {
+        <li>@product.Name @product.category.Name</li>
+    }
+</ul>
